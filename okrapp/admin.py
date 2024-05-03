@@ -119,15 +119,15 @@ class ReflectionAdmin(admin.ModelAdmin):
     search_fields = ['plan_id']
     date_hierarchy = 'date'
 
-class ChecklistTableAdmin(admin.ModelAdmin):
-    list_display = ('checklist',)
-    # list_filter = ('plan_id', 'date', 'conclusion', 'plan')
-    # search_fields = ['plan_id']
-    # date_hierarchy = 'date'
-    class Media:
-        js = (
-            'js/admin_checklist.js',   # inside app static folder
-        )
+# class ChecklistTableAdmin(admin.ModelAdmin):
+#     list_display = ('checklist',)
+#     # list_filter = ('plan_id', 'date', 'conclusion', 'plan')
+#     # search_fields = ['plan_id']
+#     # date_hierarchy = 'date'
+#     class Media:
+#         js = (
+#             'js/admin_checklist.js',   # inside app static folder
+#         )
 
 
 
@@ -138,4 +138,5 @@ admin.site.register(KJBGoalType)
 admin.site.register(KJBGoal, KJBGoalAdmin)
 admin.site.register(Checklist, ChecklistAdmin)
 admin.site.register(Reflection, ReflectionAdmin)
-admin.site.register(ChecklistTable, ChecklistTableAdmin)
+# admin.site.register(ChecklistTable, ChecklistTableAdmin)
+admin.site.register(ChecklistTable)

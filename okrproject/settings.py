@@ -83,7 +83,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'okrproject',
         'USER': 'postgres',
-        'PASSWORD': '12341234',
+        'PASSWORD': '9304',
         'HOST': 'localhost',
         'PORT': '5432',
     }
